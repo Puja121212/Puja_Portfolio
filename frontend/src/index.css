@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: rgb(229 231 235);
+  }
+  
+  *:dark {
+    border-color: rgb(55 65 81);
+  }
+  
+  body {
+    background-color: rgb(255 255 255);
+    color: rgb(17 24 39);
+    transition-property: background-color, border-color, color;
+    transition-duration: 300ms;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body:dark {
+    background-color: rgb(17 24 39);
+    color: rgb(243 244 246);
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass-morphism {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .glass-morphism:dark {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .gradient-text {
+    background-image: linear-gradient(to right, rgb(96 165 250), rgb(37 99 235));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .btn-primary {
+    background-color: rgb(59 130 246);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  
+  .btn-primary:hover {
+    background-color: rgb(37 99 235);
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-secondary {
+    border: 1px solid rgb(59 130 246);
+    color: rgb(59 130 246);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  
+  .btn-secondary:hover {
+    background-color: rgb(59 130 246);
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  .card-hover {
+    transition: all 0.3s;
+  }
+  
+  .card-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+}
