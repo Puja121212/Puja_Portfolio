@@ -48,9 +48,9 @@ const projectSchema = new mongoose.Schema({
     required: [true, 'Project image is required'],
     validate: {
       validator: function(image) {
-        return /^https?:\/\/.*/.test(image);
+        return /^https?:\/\/.*/.test(image) || /^\/.*/.test(image);
       },
-      message: 'Please provide a valid image URL'
+      message: 'Please provide a valid image URL or local path'
     }
   },
   category: {

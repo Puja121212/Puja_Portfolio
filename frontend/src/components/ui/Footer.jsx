@@ -142,14 +142,14 @@ const Footer = () => {
               </div>
               
               <div className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400">
-                <span>Made with</span>
+                <span>Designed & Developed by Pujarani Behera</span>
                 <motion.div
                   animate={{ scale: [1, 1.2, 1] }}
                   transition={{ duration: 1.5, repeat: Infinity }}
                 >
                   <Heart className="w-4 h-4 text-red-500 fill-current" />
                 </motion.div>
-                <span>using React & Tailwind CSS</span>
+               
               </div>
             </div>
           </div>

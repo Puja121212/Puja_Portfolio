@@ -6,85 +6,103 @@ dotenv.config();
 
 const sampleProjects = [
   {
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce solution with user authentication, payment integration, and admin dashboard. Features include product catalog, shopping cart, order management, and real-time inventory tracking.',
-    techStack: ['React', 'Node.js', 'MongoDB', 'Express', 'Stripe', 'JWT'],
-    githubLink: 'https://github.com/yourusername/ecommerce-platform',
-    liveLink: 'https://ecommerce-demo.vercel.app',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop',
+    title: 'AI Powered eCommerce Platform',
+      description: 'Lumina.ai is an AI-powered full-stack eCommerce web application built using the MERN stack. It features Visual Search, Voice Search, AI Shopping Assistant, secure authentication, cloud image management, and a modern responsive UI to deliver a smart shopping experience.',
+      techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB Atlas', 'Tailwind CSS', 'Firebase Authentication', 'Google Gemini AI', 'Cloudinary', 'Mongoose', 'REST APIs', 'Framer Motion', 'Axios', 'Multer', 'JWT Authentication', 'Responsive Web Design', 'AI Integration'],
+      githubLink: 'https://github.com/Puja121212/Lumina.ai',
+      liveLink: 'https://lumina-201jd5jms-pujarani-behera-s-projects.vercel.app',
+      image: '/lumina-home.png',
+      category: 'Fullstack',
+      featured: true
+  },
+  {
+    title: 'AI-Todo App',
+    description: 'An intelligent task management application powered by Google Gemini AI. Features include AI-generated subtasks, secure authentication, and a responsive modern UI.',
+    techStack: ['React', 'Node.js', 'MongoDB', 'Express', 'Google Gemini AI', 'Tailwind CSS'],
+    githubLink: 'https://github.com/Puja121212/ai-todo-app',
+    liveLink: 'https://ai-todo-app-lime.vercel.app/',
+    image: '/ai-todo.png',
     category: 'Fullstack',
     featured: true
   },
   {
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates and team collaboration features. Includes drag-and-drop functionality, team workspaces, and progress tracking.',
-    techStack: ['React', 'Node.js', 'Socket.io', 'MongoDB', 'Express'],
-    githubLink: 'https://github.com/yourusername/task-manager',
-    liveLink: 'https://taskmanager-demo.vercel.app',
-    image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=400&fit=crop',
-    category: 'Fullstack',
-    featured: true
-  },
-  {
-    title: 'Weather Dashboard',
-    description: 'A responsive weather application with location-based forecasts and interactive weather maps. Features include 7-day forecasts, weather alerts, and beautiful data visualizations.',
-    techStack: ['React', 'Tailwind CSS', 'Weather API', 'Chart.js', 'Geolocation API'],
-    githubLink: 'https://github.com/yourusername/weather-app',
-    liveLink: 'https://weather-demo.vercel.app',
-    image: 'https://images.unsplash.com/photo-1592210454359-784955003024?w=800&h=400&fit=crop',
-    category: 'Frontend',
-    featured: false
-  },
-  {
-    title: 'Blog API',
-    description: 'RESTful API for a blogging platform with user authentication and content management. Features include CRUD operations, user roles, and content moderation.',
-    techStack: ['Node.js', 'Express', 'MongoDB', 'JWT', 'Bcrypt'],
-    githubLink: 'https://github.com/yourusername/blog-api',
-    liveLink: 'https://blog-api-demo.herokuapp.com',
-    image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=400&fit=crop',
-    category: 'Backend',
-    featured: false
-  },
-  {
-    title: 'Portfolio Website',
-    description: 'A modern portfolio website with smooth animations, dark mode, and contact form. Built with cutting-edge technologies and best practices for performance and SEO.',
-    techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'Node.js', 'Express'],
-    githubLink: 'https://github.com/yourusername/portfolio',
-    liveLink: 'https://yourportfolio.vercel.app',
-    image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=400&fit=crop',
-    category: 'Frontend',
-    featured: true
-  },
-  {
-    title: 'Social Media Dashboard',
-    description: 'Analytics dashboard for social media management with data visualization and reporting. Track engagement, schedule posts, and analyze performance across multiple platforms.',
-    techStack: ['React', 'Node.js', 'MongoDB', 'Chart.js', 'Socket.io', 'Express'],
-    githubLink: 'https://github.com/yourusername/social-dashboard',
-    liveLink: 'https://social-dashboard-demo.vercel.app',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop',
-    category: 'Fullstack',
-    featured: false
-  },
-  {
-    title: 'Recipe Finder',
-    description: 'A recipe discovery app with search functionality, meal planning, and grocery list generation. Features include dietary filters and nutrition information.',
-    techStack: ['React', 'Node.js', 'MongoDB', 'Express', 'Recipe API'],
-    githubLink: 'https://github.com/yourusername/recipe-finder',
-    liveLink: 'https://recipe-finder-demo.vercel.app',
-    image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800&h=400&fit=crop',
-    category: 'Fullstack',
-    featured: false
-  },
-  {
-    title: 'URL Shortener',
-    description: 'A simple URL shortening service with analytics and custom alias support. Features include click tracking, QR code generation, and link management.',
-    techStack: ['Node.js', 'Express', 'MongoDB', 'QR Code API'],
-    githubLink: 'https://github.com/yourusername/url-shortener',
-    liveLink: 'https://url-shortener-demo.herokuapp.com',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop',
-    category: 'Backend',
-    featured: false
-  }
+  title: 'AI Powered Real-Time Chat App',
+
+  description:
+    'A full-stack real-time one-to-one chat application built with React, Node.js, Express, MongoDB, and Socket.IO. Features include JWT authentication, private messaging, typing indicators, online/offline status, AI smart replies, voice messages, reactions, avatar upload, and dark/light theme support.',
+
+  techStack: [
+    'React.js',
+    'Vite',
+    'Tailwind CSS',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+    'Mongoose',
+    'Socket.IO',
+    'JWT Authentication',
+    'Google Gemini AI',
+    'Cloudinary',
+    'Multer',
+    'Axios',
+    'REST APIs'
+  ],
+
+  githubLink: 'https://github.com/Puja121212/chat-app',
+
+  liveLink: 'https://chat-app-seven-theta-99.vercel.app',
+
+  image: '/chat-app.png',
+
+  category: 'Fullstack',
+
+  featured: true
+},
+{
+  title: 'Drum Kit',
+
+  description:
+    'An interactive web-based drum kit application that allows users to play different drum sounds using keyboard keys or mouse clicks. Includes smooth button animations, responsive dark UI, and real-time sound effects.',
+
+  techStack: [
+    'HTML5',
+    'CSS3',
+    'JavaScript',
+    'DOM Manipulation',
+    'Audio API',
+    'Responsive Design'
+  ],
+
+  githubLink: 'https://github.com/Puja121212/drum-kit',
+
+  image: '/drum-kit.png',
+
+  category: 'Frontend',
+
+  featured: false
+},
+{
+  title: 'Dice Game',
+
+  description:
+    'A simple browser-based dice game built using HTML, CSS, and JavaScript. Two players roll dice on each page refresh, and the game automatically displays the winner or a draw result.',
+
+  techStack: [
+    'HTML5',
+    'CSS3',
+    'JavaScript',
+    'DOM Manipulation',
+    'Responsive Design'
+  ],
+
+  githubLink: 'https://github.com/Puja121212/Dice-Game',
+
+  image: '/dice-game.png',
+
+  category: 'Frontend',
+
+  featured: false
+},
 ];
 
 const seedDatabase = async () => {
