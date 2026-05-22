@@ -1,9 +1,9 @@
-const API_BASE_URL = 'http://localhost:5002/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5002';
 
 export const API_ENDPOINTS = {
-  PROJECTS: `${API_BASE_URL}/projects`,
-  CONTACT: `${API_BASE_URL}/contact`,
-  HEALTH: `${API_BASE_URL}/health`,
+  PROJECTS: `${API_BASE_URL}/api/projects`,
+  CONTACT: `${API_BASE_URL}/api/contact`,
+  HEALTH: `${API_BASE_URL}/api/health`,
 };
 
 export const apiRequest = async (endpoint, options = {}) => {

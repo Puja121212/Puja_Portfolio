@@ -115,7 +115,13 @@ NODE_ENV=development
 FRONTEND_URL=http://localhost:5173
 ```
 
-> Do not commit `backend/.env` to GitHub.
+### Frontend (`frontend/.env`)
+
+```env
+VITE_API_URL=http://localhost:5002
+```
+
+> Do not commit real `.env` files to GitHub. Use `backend/.env.example` and `frontend/.env.example` as templates.
 
 ---
 
