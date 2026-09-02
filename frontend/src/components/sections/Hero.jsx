@@ -177,13 +177,13 @@ const Hero = () => {
             </Button>
             <Button 
               variant="secondary"
-              href="/PujaRaniBehera_Resume.pdf"
-              download="PujaRaniBehera_Resume.pdf"
+              href="/PujaRani_Behera_Resume_Master1.pdf"
+              download="PujaRani_Behera_Resume_Master1.pdf"
               icon={Download}
               className="w-full sm:w-auto"
               onClick={(e) => {
                 // Check if resume exists before downloading
-                fetch('/PujaRaniBehera_Resume.pdf', { method: 'HEAD' })
+                fetch('/PujaRani_Behera_Resume_Master1.pdf', { method: 'HEAD' })
                   .then(res => {
                     if (!res.ok) {
                       e.preventDefault();
